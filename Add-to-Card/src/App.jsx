@@ -1,9 +1,12 @@
 import Main from "./layout/main";
+import ItemContextProvider from "./store/itemContext";
 function App() {
   return (
-    <section>
-      <Main />
-    </section>
+    <>
+      <ItemContextProvider>
+        <Main />
+      </ItemContextProvider>
+    </>
   );
 }
 
